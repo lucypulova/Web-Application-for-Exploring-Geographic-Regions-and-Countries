@@ -1,0 +1,241 @@
+:root {
+    --background-color: #f4f4f9;
+    --element-bg: #fff;
+    --border-color: #ddd;
+    --button-bg: #D1D5DA;
+    --button-action: #F3F4F6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-size: 0.8rem;
+    
+}
+
+h2, h3 {
+    all: unset; 
+    display: block; 
+    font-weight: normal; 
+    margin: 0; /
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background-color: var(--element-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 5rem auto;
+    width: 100%;
+    min-height: 75vh;
+}
+
+.container-filters {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.filters {
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filters label {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    background-color: var(--element-bg);
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.filters label:hover {
+    background-color: #F9FAFB;
+}
+
+.filters label:active {
+    background-color: #F9FAFB;
+}
+
+.filters label[for="search"] {
+    border: none;
+    background-color: none;
+    padding: 0;
+}
+
+.filters label[for="search"]:hover {
+    background-color: var(--element-bg);
+}
+
+.filters label[for="search"]:active {
+    background-color: var(--element-bg);
+}
+
+.filters input[type="text"] { 
+    background-color: var(--element-bg);
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.filters input[type="text"]:hover { 
+    background-color: #F9FAFB;
+}
+
+.filters input[type="text"]:active { 
+    background-color: #F9FAFB;
+}
+
+.filters input[type="radio"] {
+    accent-color: #0056b3;
+    margin-right: 0.5rem;
+}
+
+.filters button {
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--element-bg);
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.filters button:hover {
+    background-color: #F3F4F6;
+}
+
+.filters button:active {
+    background-color: #F3F4F6;
+}
+
+.countries-grid {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to the next row */
+    gap: 2rem; /* Space between items */
+    
+}
+
+.country-card {
+    flex: auto;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 15.5rem;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.country-flag {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.info-header h3 {
+    font-size: 1rem;
+    color: #46505F;
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
+    max-width: 70%; /* Adjust this to control how much space the name takes */
+}
+
+.heart-icon {
+    font-size: 1.5rem;
+    color: #ccc; /* Default color */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.heart-icon:hover {
+    color: #ff0000;
+}
+
+.heart-icon:active {
+    color: #ff0000;
+}
+
+.heart-icon.liked {
+    color: #ff0000; /* Red color for liked state */
+}
+
+.check-country {
+    background-color: var(--button-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: stretch;
+    width: 100%;
+    text-align: center;
+}
+
+.check-country:hover {
+    background-color: #F3F4F6;
+}
+
+.check-country:active {
+    background-color: #F3F4F6;
+}

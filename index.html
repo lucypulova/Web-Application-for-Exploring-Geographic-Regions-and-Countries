@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions and Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="region-selection">
+            <form action="countriesList.html" method="get">
+                <div class="region-option">
+                    <input type="radio" id="antarctic" name="region" value="Antarctic">
+                    <label for="antarctic">Antarctic</label>
+                </div>
+                <div class="region-option">
+                    <input type="radio" id="americas" name="region" value="Americas">
+                    <label for="americas">Americas</label>
+                </div>
+                <div class="region-option">
+                    <input type="radio" id="europe" name="region" value="Europe">
+                    <label for="europe">Europe</label>
+                </div>
+                <div class="region-option">
+                    <input type="radio" id="africa" name="region" value="Africa">
+                    <label for="africa">Africa</label>
+                </div>
+                <div class="region-option">
+                    <input type="radio" id="asia" name="region" value="Asia">
+                    <label for="asia">Asia</label>
+                </div>
+                <div class="region-option">
+                    <input type="radio" id="oceania" name="region" value="Oceania">
+                    <label for="oceania">Oceania</label>
+                </div>
+                <button type="submit">Check region</button>
+            </form>
+        </div>
+        <div class="map-display">
+            <img src="map.svg" alt="World Map">
+        </div>
+    </div>
+</body>
+</html>

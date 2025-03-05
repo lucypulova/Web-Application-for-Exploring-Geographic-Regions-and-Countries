@@ -1,0 +1,94 @@
+:root {
+    --background-color: #f4f4f9;
+    --element-bg: #fff;
+    --border-color: #ddd;
+    --heart-color-default: #ccc;
+    --heart-color-favorite: #ff0000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-size: 0.8rem;
+    
+}
+
+.container {
+    background-color: var(--element-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 5rem auto;
+    width: 100%;
+    min-height: 68vh;
+}
+
+.country-header {
+    display: flex;
+    justify-content: space-between; /* Сърцето остава в дясно */
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.flag-name-container {
+    display: flex;
+    align-items: center; /* Името на държавата е подравнено с флага по вертикала */
+    gap: 1rem; /* Пространство между флага и името */
+}
+
+.flag-container img {
+    width: 85px; /* Коригираме размера на флага, ако е нужно */
+    height: 55px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.country-name-heart h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    white-space: nowrap; /* Предотвратява пренасяне на текста на нов ред */
+    text-overflow: ellipsis; /* Добавя три точки, ако текстът е твърде дълъг */
+    overflow: hidden; /* Скрива излишния текст */
+}
+
+.heart-icon {
+    font-size: 2rem;
+    color: var(--heart-color-default);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.heart-icon.liked {
+    color: var(--heart-color-favorite);
+}
+
+.country-info {
+    margin-top: 2rem;
+}
+
+.country-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.country-info td {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.country-info td:first-child {
+
+    text-align: left;
+    width: 30%;
+}
+
+.country-info tr:last-child td {
+    border-bottom: none; /* Премахваме линията за последния ред */
+}

@@ -1,0 +1,86 @@
+:root {
+    --background-color: #f4f4f9;
+    --element-bg: #fff;
+    --border-color: #ddd;
+    --button-bg: #D1D5DA;
+    --button-action: #F3F4F6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 0.8rem;
+}
+
+.container {
+    display: flex;
+    background-color: var(--element-bg);
+    padding: 6rem 2rem;
+    border-radius: 10px;
+    width: 100%;
+    gap: 3rem;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+.region-selection {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.region-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--element-bg);
+    padding: 0.8rem 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 0.8rem;
+}
+
+.region-option input[type="radio"] {
+    accent-color: #0056b3;
+    transform: scale(1.2);
+}
+
+button {
+    background-color: var(--button-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: stretch;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: var(--button-action);
+}
+
+button:active {
+    background-color: var(--button-action);
+}
+
+
+.map-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.map-display img {
+    width: 30rem;
+ 
+}
+
